@@ -1,24 +1,4 @@
-<?php
-	$copy = '2009-' . date('Y');
-	if ($copy == '2009-2009') { $copy = '2009'; }
-
-	// from Adobe Flash Player Detection Kit (Revision 1.5):
-	// Search through the HTTP_ACCEPT header for the Flash Player mime-type.
-	$swfheader = strpos($_SERVER['HTTP_ACCEPT'],'application/x-shockwave-flash');
-	if ($swfheader === false) {
-		$hasFlash = true;
-	} else {
-		$hasFlash = false;
-	}
-	
-	// isflashinstalled.com:
-	$fpdksInstalled = "Unknown";
-	if ($hasFlash === true) {
-		$fpdkInstalled = "Yes";
-	} elseif ($hasFlash === false) {
-		$fpdkInstalled = "No";
-	}
-?>
+<?php require_once('php/inc.php'); ?>
 
 <!DOCTYPE html>
 
@@ -26,21 +6,21 @@
 
 	<head>
 		<meta charset="utf-8" />
-		
+
 		<title>Is Flash Installed?</title>
 		<meta name="description" content="This site will tell you if Adobe Flash is installed on your computer and, if so, which version you have." />
 		<meta name="keywords" content="Flash,Adobe,Macromedia,plugin,player,browser,installed,installation,install,upgrade,download,version,test" />
-		
+
 		<link rel="shortcut icon" sizes="16x16" href="favicon-16.png" />
 		<link rel="shortcut icon" sizes="32x32" href="favicon-32.png" />
 		<link rel="shortcut icon" sizes="57x57" href="favicon-57.png" />
 		<link rel="shortcut icon" sizes="any" href="favicon.eps" />
-		
+
 		<link rel="stylesheet" href="default.css" />
 		<!--[if lte IE 6]>
 			<link rel="stylesheet" href="ie6.css" />
 		<![endif]-->
-		
+
 		<script src="modernizr-1.0.min.js"></script>
 		<script src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript">
@@ -65,7 +45,7 @@
 	</head>
 
 	<body>
-		
+
 		<div id="content">
 			<header id="header">
 				<hgroup>
@@ -74,7 +54,7 @@
 					<h3>This is a BETA version!</h3>
 				</hgroup>
 			</header>
-		
+
 			<section id="results">
 				<header>
 					<hgroup>
@@ -88,7 +68,7 @@
 					<p id="getFlash"><a onclick="javascript:window.open(this.href);return false;" href="http://www.adobe.com/go/getflash/">Get <span class="macromedia">Macromedia/</span>Adobe Flash for Free!</a></p>
 					<div class="clear"></div>
 				</header>
-			
+
 				<div id="googleAd">
 					<script type="text/javascript"><!--
 					google_ad_client = "pub-7926086199679909";
@@ -127,7 +107,7 @@
 						</dl>
 						<div class="clear"></div>
 					</section>
-			
+
 					<section id="afpdkc-results">
 						<h1><a onclick="javascript:window.open(this.href);return false;" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Client-Side Detection</h1>
 						<dl>
@@ -148,13 +128,13 @@
 						</dl>
 						<div class="clear"></div>
 					</section>
-			
+
 					<section id="afpdks-results">
 						<h1><a onclick="javascript:window.open(this.href);return false;" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Server-Side Detection (PHP)</h1>
 						<dl>
 							<dt>Installed:</dt>
 							<dd id="afpdks-installed"><?php print $fpdkInstalled; ?></dd>
-			
+
 							<dt>Note:</dt>
 							<dd id="afpdks-notes">
 								<blockquote>
@@ -168,7 +148,7 @@
 					<div class="clear"></div>
 				</div>
 			</section>
-		
+
 			<footer>
 				<p>&copy; <?php print $copy; ?></p>
 				<p>This site is not affiliated with Adobe Systems, Inc. <em>Adobe</em>, <em>Macromedia</em>, <em>Shockwave</em> and <em>Flash</em> are trademarks or registered trademarks of Adobe Systems, Inc. in the United States and other countries.</p>
@@ -189,5 +169,5 @@
 			} catch(err) {}
 		</script>
 	</body>
-	
+
 </html>

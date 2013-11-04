@@ -2,166 +2,135 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
-
+<html lang="en-ca" class="no-js">
 	<head>
 		<meta charset="utf-8" />
 
 		<title>Is Flash Installed?</title>
+
 		<meta name="description" content="This site will tell you if Adobe Flash is installed on your computer and, if so, which version you have." />
 		<meta name="keywords" content="Flash,Adobe,Macromedia,plugin,player,browser,installed,installation,install,upgrade,download,version,test" />
 
-		<link rel="shortcut icon" sizes="16x16" href="favicon-16.png" />
-		<link rel="shortcut icon" sizes="32x32" href="favicon-32.png" />
-		<link rel="shortcut icon" sizes="57x57" href="favicon-57.png" />
-		<link rel="shortcut icon" sizes="any" href="favicon.eps" />
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160" />
+		<meta name="msapplication-TileColor" content="#bd1418" />
+		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-		<link rel="stylesheet" href="default.css" />
-		<!--[if lte IE 6]>
-			<link rel="stylesheet" href="ie6.css" />
-		<![endif]-->
+		<link rel="stylesheet" href="css/default.css" />
 
-		<script src="modernizr-1.0.min.js"></script>
-		<script src="http://www.google.com/jsapi"></script>
-		<script type="text/javascript">
-			<!--
-				if (google) {
-					google.load("jquery", "1.3");
-				} else {
-				   var head= document.getElementsByTagName('head')[0];
-				   var script= document.createElement('script');
-				   script.type= 'text/javascript';
-				   script.src= 'jquery-1.3.2.min.js';
-				   head.appendChild(script);
-				}
-			// -->
-		</script>
-		<script src="isflashinstalled.js" language="javascript"></script>
-		<script src="AC_OETags.js" language="javascript"></script>
-		<script src="flash_detect_min.js" language="javascript"></script>
-		<!--[if IE]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<script src="js/modernizr-1.0.min.js"></script>
 	</head>
 
 	<body>
 
-		<div id="content">
-			<header id="header">
-				<hgroup>
-					<h1>Is flash installed on this computer? What version of flash do you have?</h1>
-					<h2>IsFlashInstalled.com will tell you <em>if</em> <span class="macromedia">Macromedia/</span>Adobe Flash is installed and <em>what version</em> of flash is installed on your computer.</h2>
-					<h3>This is a BETA version!</h3>
-				</hgroup>
-			</header>
+		<header id="header" role="banner">
+			<h1>Is Flash installed on this computer? What version of Flash do you have?</h1>
+			<p>IsFlashInstalled.com will tell you <em>if</em> <span class="macromedia">Macromedia/</span>Adobe Flash is installed and <em>what version</em> of Flash is installed on your computer.</p>
+		</header>
 
+		<main id="main" role="main">
 			<section id="results">
-				<header>
-					<hgroup>
-						<h1 id="results-question">Is Flash Installed?</h1>
-						<h1 id="results-answer">Maybe?</h1>
-					</hgroup>
-					<p id="results-message">We're not 100% sure if <span class="macromedia">Macromedia/</span>Adobe Flash is installed! See below for details.</p>
-					<noscript>
-						<p>You have JavaScript turned off, which makes it harder for us to be sure whether <span class="macromedia">Macromedia/</span>Adobe Flash is installed. To get a clearer idea, please turn JavaScript on.</p>
-					</noscript>
-					<p id="getFlash"><a onclick="javascript:window.open(this.href);return false;" href="http://www.adobe.com/go/getflash/">Get <span class="macromedia">Macromedia/</span>Adobe Flash for Free!</a></p>
-					<div class="clear"></div>
-				</header>
+				<h2>
+					<span id="results-question">Is Flash Installed?</span>
+					<span id="results-answer">Maybe</span>
+				</h2>
 
-				<div id="googleAd">
-					<script type="text/javascript"><!--
-					google_ad_client = "pub-7926086199679909";
-					/* is flash installed? -- banner */
-					google_ad_slot = "4430944674";
-					google_ad_width = 728;
-					google_ad_height = 90;
-					//-->
-					</script>
-					<script type="text/javascript"
-					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-					</script>
-				</div>
+				<p id="results-message">Unfortunately, I can’t tell for sure if <span class="macromedia">Macromedia/</span>Adobe Flash is installed.</p>
 
-				<div class="bg">
-					<section id="jsfdl-results">
-						<h1><a onclick="javascript:window.open(this.href);return false;" href="http://www.featureblend.com/javascript-flash-detection-library.html">JavaScript Flash Detection Library (Flash Detect)</a> (Version 1.0.4)</h1>
-						<dl>
-							<dt>Installed:</dt>
-							<dd id="jsfdl-installed">Unknown</dd>
+				<noscript>
+					<p>You have JavaScript turned off, which makes it harder for me to be sure whether <span class="macromedia">Macromedia/</span>Adobe Flash is installed. To get a better idea, please <a rel="external" target="_blank" href="http://www.enable-javascript.com/">try turning JavaScript on</a>.</p>
+				</noscript>
 
-							<dt>Raw Version:</dt>
-							<dd id="jsfdl-raw">Unknown</dd>
+				<p id="getFlash"><a rel="external" target="_blank" href="http://www.adobe.com/go/getflash/">Get <span class="macromedia">Macromedia/</span>Adobe Flash for free!</a></p>
+			</section>
 
-							<dt>Major Version:</dt>
-							<dd id="jsfdl-major">Unknown</dd>
+			<aside id="googleAd">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-7926086199679909" data-ad-slot="4430944674"></ins>
+				<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			</aside>
 
-							<dt>Minor Version:</dt>
-							<dd id="jsfdl-minor">Unknown</dd>
+			<section class="details js" id="jsfdl">
+				<h2><a rel="external" target="_blank" href="http://www.featureblend.com/javascript-flash-detection-library.html">JavaScript Flash Detection Library (Flash Detect)</a> (Version 1.0.4)</h2>
+				<dl>
+					<dt class="jsfdl-installed">Installed</dt>
+					<dd class="jsfdl-installed">Unknown</dd>
 
-							<dt>Revision:</dt>
-							<dd id="jsfdl-revision">Unknown</dd>
+					<dt class="jsfdl-raw">Raw version</dt>
+					<dd class="jsfdl-raw">Unknown</dd>
 
-							<dt>Revision String:</dt>
-							<dd id="jsfdl-revisionStr">Unknown</dd>
-						</dl>
-						<div class="clear"></div>
-					</section>
+					<dt class="jsfdl-major">Major version</dt>
+					<dd class="jsfdl-major">Unknown</dd>
 
-					<section id="afpdkc-results">
-						<h1><a onclick="javascript:window.open(this.href);return false;" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Client-Side Detection</h1>
-						<dl>
-							<dt>Type:</dt>
-							<dd id="afpdkc-type">Unknown</dd>
+					<dt class="jsfdl-minor">Minor version</dt>
+					<dd class="jsfdl-minor">Unknown</dd>
 
-							<dt>Version:</dt>
-							<dd id="afpdkc-version">Unknown</dd>
+					<dt class="jsfdl-revision">Revision</dt>
+					<dd class="jsfdl-revision">Unknown</dd>
 
-							<dt>&nbsp;</dt>
-							<dd>&nbsp;</dd>
+					<dt class="jsfdl-revisionStr">Revision string</dt>
+					<dd class="jsfdl-revisionStr">Unknown</dd>
+				</dl>
+			</section>
 
-							<dt>&nbsp;</dt>
-							<dd>&nbsp;</dd>
+			<section class="details js" id="afpdkc">
+				<h2><a rel="external" target="_blank" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Client-Side Detection</h2>
+				<dl>
+					<dt class="afpdkc-type">Type</dt>
+					<dd class="afpdkc-type">Unknown</dd>
 
-							<dt>&nbsp;</dt>
-							<dd>&nbsp;</dd>
-						</dl>
-						<div class="clear"></div>
-					</section>
+					<dt class="afpdkc-version">Version</dt>
+					<dd class="afpdkc-version">Unknown</dd>
+				</dl>
+			</section>
 
-					<section id="afpdks-results">
-						<h1><a onclick="javascript:window.open(this.href);return false;" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Server-Side Detection (PHP)</h1>
-						<dl>
-							<dt>Installed:</dt>
-							<dd id="afpdks-installed"><?php print $fpdkInstalled; ?></dd>
+			<section class="details php" id="afpdks">
+				<h2><a rel="external" target="_blank" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Server-Side Detection (PHP)</h2>
+				<dl>
+					<dt class="afpdks-installed">Installed</dt>
+					<dd class="afpdks-installed"><?php print $fpdkInstalled; ?></dd>
 
-							<dt>Note:</dt>
-							<dd id="afpdks-notes">
-								<blockquote>
-									<p>The following issues with server side detection should be closely noted. Internet Explorer on Mac OS is hard- coded to accept '*/*' and cannot be modified dynamically. Secondly, users can manually uninstall Flash Player by deleting the executable itself. This casuses (sic) the custom accept header to be &quot;orphaned&quot; such that server detection logic thinks Flash has been installed, when in fact it is no longer available. It is also possible to disable ActiveX controls through the Windows XP Service Pack 2 security settings, which will similarly cause the custom accept header to be orphaned.</p>
-									<p>&mdash; Adobe Flash&reg; Player Detection Kit Revision 1.5 by Michael Williams (FlashPlayerDetectionKit_StartHere.pdf)</p>
-								</blockquote>
-							</dd>
-						</dl>
-						<div class="clear"></div>
-					</section>
-					<div class="clear"></div>
-				</div>
+					<dt class="afpdks-notes">Note</dt>
+					<dd class="afpdks-notes">
+						<blockquote>
+							<p>The following issues with server side detection should be closely noted. Internet Explorer on Mac OS is hard-coded to accept '*/*' and cannot be modified dynamically. Secondly, users can manually uninstall Flash Player by deleting the executable itself. This casuses <i>(sic)</i> the custom accept header to be &quot;orphaned&quot; such that server detection logic thinks Flash has been installed, when in fact it is no longer available. It is also possible to disable ActiveX controls through the Windows XP Service Pack 2 security settings, which will similarly cause the custom accept header to be orphaned.</p>
+							<cite>&mdash; Adobe Flash&reg; Player Detection Kit Revision 1.5 by Michael Williams (FlashPlayerDetectionKit_StartHere.pdf)</cite>
+						</blockquote>
+					</dd>
+				</dl>
 			</section>
 
 			<footer>
-				<p>&copy; <?php print $copy; ?></p>
-				<p>This site is not affiliated with Adobe Systems, Inc. <em>Adobe</em>, <em>Macromedia</em>, <em>Shockwave</em> and <em>Flash</em> are trademarks or registered trademarks of Adobe Systems, Inc. in the United States and other countries.</p>
-				<p>Wallpaper pattern incorporates a design by <a onclick="javascript:window.open(this.href);return false;" href="http://sofi01.deviantart.com/art/French-Wallpaper-Patterns-1-121377422">~sofi01</a>.</p>
+				<p>&copy; 2009&ndash;<?php print date('Y'); ?></p>
+				<p>This site is not affiliated with Adobe Systems, Inc. <i>Adobe</i>, <i>Macromedia</i>, <i>Shockwave</i> and <i>Flash</i> are trademarks or registered trademarks of Adobe Systems, <abbr title="Incorporated">Inc.</abbr> in the United States and other countries.</p>
 				<p>Problems? Contact us at <a href="mailto:info@isflashinstalled.com">info@isflashinstalled.com</a>.</p>
 			</footer>
-		</div>
+		</main>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+		<script src="js/isflashinstalled.js"></script>
+		<script src="js/AC_OETags.js"></script>
+		<script src="js/flash_detect_min.js"></script>
 
 		<script type="text/javascript">
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 		</script>
-
 		<script type="text/javascript">
 			try {
 				var pageTracker = _gat._getTracker("UA-11691016-1");
@@ -169,5 +138,4 @@
 			} catch(err) {}
 		</script>
 	</body>
-
 </html>

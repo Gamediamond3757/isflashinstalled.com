@@ -31,7 +31,7 @@
 
 		<link rel="stylesheet" href="css/default.css" />
 
-		<script src="js/modernizr-1.0.min.js"></script>
+		<script src="js/modernizr.js"></script>
 	</head>
 
 	<body>
@@ -81,13 +81,13 @@
 					<dt class="jsfdl-revision">Revision</dt>
 					<dd class="jsfdl-revision">Unknown</dd>
 
-					<dt class="jsfdl-revisionStr">Revision string</dt>
-					<dd class="jsfdl-revisionStr">Unknown</dd>
+					<dt class="jsfdl-revisionSt">Revision string</dt>
+					<dd class="jsfdl-revisionSt">Unknown</dd>
 				</dl>
 			</section>
 
 			<section class="details js" id="afpdkc">
-				<h2><a rel="external" target="_blank" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Client-Side Detection</h2>
+				<h2><a rel="external" target="_blank" href="http://solutionpartners.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Client-Side Detection</h2>
 				<dl>
 					<dt class="afpdkc-type">Type</dt>
 					<dd class="afpdkc-type">Unknown</dd>
@@ -98,7 +98,7 @@
 			</section>
 
 			<section class="details php" id="afpdks">
-				<h2><a rel="external" target="_blank" href="http://www.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Server-Side Detection (PHP)</h2>
+				<h2><a rel="external" target="_blank" href="http://solutionpartners.adobe.com/products/flashplayer/download/detection_kit/">Adobe Flash Player Detection Kit</a> (Revision 1.5) Server-Side Detection (PHP)</h2>
 				<dl>
 					<dt class="afpdks-installed">Installed</dt>
 					<dd class="afpdks-installed"><?php print $fpdkInstalled; ?></dd>
@@ -121,21 +121,19 @@
 		</main>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
 
-		<script src="js/isflashinstalled.js"></script>
+		<script src="js/flash_detect.js"></script>
 		<script src="js/AC_OETags.js"></script>
-		<script src="js/flash_detect_min.js"></script>
+		<script src="js/isflashinstalled.js"></script>
 
-		<script type="text/javascript">
-			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-			try {
-				var pageTracker = _gat._getTracker("UA-11691016-1");
-				pageTracker._trackPageview();
-			} catch(err) {}
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-11691016-1');ga('send','pageview');
 		</script>
 	</body>
 </html>

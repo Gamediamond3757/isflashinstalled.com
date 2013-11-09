@@ -31,8 +31,8 @@
 		<?php // PRODUCTION RESOURCES
 			 if (strpos($_SERVER['PHP_SELF'], '/src/') === false) { ?>
 
-		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/top.js"></script>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<script src="js/top.min.js"></script>
 
 
 		<?php // DEV RESOURCES
@@ -166,7 +166,7 @@
 		<?php // PRODUCTION RESOURCES
 			 if (strpos($_SERVER['PHP_SELF'], '/src/') === false) { ?>
 
-		<script src="js/bottom.js"></script>
+		<script src="js/bottom.min.js"></script>
 
 
 		<?php // DEV RESOURCES

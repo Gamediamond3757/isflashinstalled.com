@@ -24,15 +24,26 @@
 		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
 		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
+
+		<?php // PRODUCTION RESOURCES
+			 if (strpos($_SERVER['PHP_SELF'], '/src/') === false) { ?>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/top.js"></script>
+
+
+		<?php // DEV RESOURCES
+			  } else { ?>
+
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/h5bp.css" />
 		<link rel="stylesheet" href="css/default.css" />
+		<script src="js/html5shiv.js"></script>
 
-		<script src="js/modernizr.js"></script>
+		<?php } ?>
 	</head>
 
 	<body>
-
 		<header id="results" role="banner">
 			<h1 class="big col col-left">Is Flash<br />Installed?</h1>
 			<div class="col col-right">
@@ -148,12 +159,22 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
 
+
+		<?php // PRODUCTION RESOURCES
+			 if (strpos($_SERVER['PHP_SELF'], '/src/') === false) { ?>
+
+		<script src="js/bottom.js"></script>
+
+
+		<?php // DEV RESOURCES
+			  } else { ?>
+
 		<script src="js/flash_detect.js"></script>
 		<script src="js/AC_OETags.js"></script>
 		<script src="js/isflashinstalled.js"></script>
+		<script src="js/typekit.js"></script>
 
-		<script src="//use.typekit.net/cdg4kxg.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
+		<?php } ?>
 
 		<script>
 			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -189,7 +189,7 @@ header .big {
 	width: 1px;
 }
 
-.results-answer {
+header .results-answer {
 	margin-top: 0.25em;
 	margin-bottom: 0;
 
@@ -222,6 +222,7 @@ header .big {
 		background-image: url('../img/background.png');
 		background-position: center;
 		background-repeat: repeat-y;
+		background-size: contain;
 	}
 
 
@@ -305,7 +306,7 @@ header .big {
 		text-align: center;
 	}
 
-	.results-answer {
+	header .results-answer {
 		margin-top: 0;
 
 		text-align: left;

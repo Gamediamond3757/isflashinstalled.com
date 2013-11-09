@@ -11,7 +11,7 @@ This site uses three methods to detect the presence of Macromedia/Adobe Flash: J
 [David Newton](http://davidnewton.ca/) made the site. The [JavaScript Flash Detection Library (Flash Detect)](http://www.featureblend.com/javascript-flash-detection-library.html) is part of the [JavaScript Flash Foundation Series](http://www.featureblend.com/#javascript-flash-foundation-series) by the [JavaScript Flash Foundation Series Group](http://groups.yahoo.com/group/javascript-flash-foundation-series), copyright © 2007 Carl S. Yestrau; the [Flash Player Detection Kit](http://solutionpartners.adobe.com/products/flashplayer/download/detection_kit/) is by [Adobe](http://adobe.com/).
 
 ## Is the code available?
-Yes. [The code for the site is available on GitHub](http://github.com/nwtn/isflashinstalled.com/), under an [MIT license](http://opensource.org/licenses/MIT)). Fork it, clone it, fix it, etc.
+Yes. [The code for the site is available on GitHub](http://github.com/nwtn/isflashinstalled.com/), under an [MIT license](http://opensource.org/licenses/MIT). Fork it, clone it, fix it, etc.
 
 ## Problems?
 [Create an issue on GitHub](https://github.com/nwtn/isflashinstalled.com/issues), or [email me at david@davidnewton.ca](mailto:david@davidnewton.ca).

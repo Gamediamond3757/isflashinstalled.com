@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 			site: {
 				expand:	true,
 				cwd:	'src',
-				src:	['*.*', 'img/*.png', 'php/*'],
+				src:	['*.*', '.htaccess', 'img/*.png', 'php/*'],
 				dest:	'build/',
 			},
 

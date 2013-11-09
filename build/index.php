@@ -12,6 +12,8 @@
 		<meta name="keywords" content="Flash,Adobe,Macromedia,plugin,player,browser,installed,installation,install,upgrade,download,version,test" />
 		<link rel="author" href="humans.txt" />
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-precomposed.png" />
 
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />

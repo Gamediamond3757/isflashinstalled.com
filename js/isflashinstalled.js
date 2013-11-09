@@ -16,13 +16,13 @@
 		installed		= -1,
 
 		answers			= {
-			'-1':		'Maybe',
+			'-1':		'May&#8203;be',
 			'0':		'Nope!',
 			'1':		'Yes!'
 		},
 
 		messages		= {
-			'-1':		'Unfortunately, I can’t tell for sure if <span class="macromedia">Macromedia/</span>Adobe Flash is installed.',
+			'-1':		'Unfortunately, I can’t tell for sure if <span class="macromedia">Macromedia/</span>Adobe Flash is installed. <a href="#details">See details below</a>.',
 			'0':		'<span class="macromedia">Macromedia/</span>Adobe Flash is not installed!',
 			'1':		'<span class="macromedia">Macromedia/</span>Adobe Flash <span class="version"></span> is installed!'
 		};
@@ -46,8 +46,8 @@
 	function display() {
 		if (installed === 1) { $('body').addClass('flash'); }
 
-		$('#results-answer').html(answers[installed]);
-		$('#results-message').html(messages[installed]);
+		$('.results-answer').html(answers[installed]);
+		$('.results-message').html(messages[installed]);
 
 		$('dd.jsfdl-installed').html(jsfdl.installed);
 		$('dd.jsfdl-raw').html(jsfdl.raw);
@@ -60,12 +60,12 @@
 		$('dd.afpdkc-version').html(afpdkc.version);
 
 		if (afpdkc.version != 'Unknown') {
-			$('span.version').html(afpdkc.version);
+			$('.version').html(afpdkc.version);
 		} else if (jsfdl.major != 'Unknown') {
 			if (jsfdl.minor != 'Unknown') {
-				$('span.version').html(jsfdl.major + '.' + jsfdl.minor);
+				$('.version').html(jsfdl.major + '.' + jsfdl.minor);
 			} else {
-				$('span.version').html(jsfdl.major);
+				$('.version').html(jsfdl.major);
 			}
 		}
 	}

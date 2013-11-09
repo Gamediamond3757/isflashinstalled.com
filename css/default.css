@@ -1,0 +1,320 @@
+/***** BASE STYLES for small screens and no-MQ UAs *****/
+
+/** Body + fonts **/
+
+body {
+	position: relative;
+
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 1em;
+
+	background-color: #eee;
+
+	color: #771100;
+	font-family: "proxima-nova", "Proxima Nova", "ProximaNova", "Proxima Sans", "ProximaSans", "Futura Light", "FuturaLight", "Akzidenz Grotesk", sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+	word-wrap: break-word;
+}
+
+header,
+.col-left dt,
+h1,
+h2,
+h3 {
+	font-family: "museo-slab", "Museo Slab", "MuseoSlab", "Rockwell", "Segoe UI", "Dejavu Sans", "Verdana", sans-serif;
+}
+
+
+
+
+
+/** Basic element styles **/
+
+a {
+	color: #470a00;
+}
+
+a:hover,
+a:focus {
+	color: #6c3b33;
+}
+
+a:active {
+	color: #3b0800;
+}
+
+abbr[title] {
+    border-bottom: none;
+}
+
+aside {
+	width: 20em;
+	height: 3.125em;
+	margin: 2em auto;
+
+	text-align: center;
+}
+
+blockquote {
+	display: inline;
+
+	margin: 0;
+	padding: 0;
+}
+
+cite {
+	font-size: 0.9em;
+}
+
+cite::before {
+	content: '\2014';
+}
+
+header {
+	text-align: center;
+	font-weight: 300;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+h3 {
+	clear: both;
+
+	margin: 2em 0 0.5em 0;
+	padding-top: 1em;
+
+	font-size: 1em;
+	font-weight: 700;
+}
+
+h3:first-child {
+	margin-top: 0;
+}
+
+dd {
+	margin: 0.5em 0 2em 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+footer {
+	clear: both;
+
+	padding-top: 1em;
+	margin: 0;
+}
+
+
+
+
+
+/** Contextually-determined element styles **/
+
+blockquote p {
+	margin: 0;
+	padding: 0;
+}
+
+footer p {
+	margin-top: 0;
+}
+
+
+
+
+
+/** Classes **/
+
+header .big {
+	font-size: 4em;
+	line-height: 0.9;
+}
+
+.details dl {
+	margin: 0;
+}
+
+.details dt,
+.details dd {
+	float: left;
+
+	margin: 0 0.5em 0 0;
+	padding: 0;
+}
+
+.details dt {
+	clear: both;
+
+	font-style: italic;
+	font-weight: normal;
+}
+
+.details dt::after {
+	content: ': ';
+}
+
+.details dd.afpdks-notes {
+	width: 85%;
+	margin: 0;
+	padding: 0;
+}
+
+.flash .extra {
+	display: none;
+}
+
+.initialism {
+	font-size: 0.9em;
+}
+
+.macromedia {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.results-answer {
+	margin-top: 0.25em;
+	margin-bottom: 0;
+
+	font-size: 6.5em;
+	text-transform: uppercase;
+}
+
+.results-message {
+	clear: both;
+
+	padding-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+/***** BREAKPOINT 1, the one and only breakpoint *****/
+
+@media screen and (min-width: 40em) {
+
+	/** Body + fonts **/
+
+	body {
+		background-image: url('../img/background.png');
+		background-position: center;
+		background-repeat: repeat-y;
+	}
+
+
+
+
+
+	/** Basic element styles **/
+
+	aside {
+		width: 29.25em;
+		height: 3.75em;
+	}
+
+	h1 {
+		text-align: right;
+	}
+
+	main {
+		clear: both;
+		padding-top: 2em;
+	}
+
+
+
+
+
+	/** Contextually-determined element styles **/
+
+	main > section.col {
+		margin-top: 4em;
+	}
+
+
+
+
+
+	/** Classes **/
+
+	.col {
+		float: left;
+
+		width: 46%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.col-left {
+		padding: 0 4% 0 0;
+		text-align: right;
+	}
+
+	.col-right {
+		padding: 0 0 0 4%;
+
+		color: #a0594d;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+	}
+
+	.details dt,
+	.details dd {
+		float: none;
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+
+	.details dd::after {
+		content: '\A';
+		white-space: pre;
+	}
+
+	.extra {
+		clear: both;
+
+		margin: 2em 0;
+		padding: 0.5em;
+
+		background: #ddd;
+		background-color: rgba(255, 255, 255, 0.8);
+
+		text-align: center;
+	}
+
+	.results-answer {
+		margin-top: 0;
+
+		text-align: left;
+	}
+
+	.results-message {
+		margin: 0 1em 2em 0;
+		padding: 0;
+
+		text-align: left;
+	}
+}

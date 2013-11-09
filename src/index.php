@@ -10,6 +10,7 @@
 
 		<meta name="description" content="This site will tell you if Adobe Flash is installed on your computer and, if so, which version you have." />
 		<meta name="keywords" content="Flash,Adobe,Macromedia,plugin,player,browser,installed,installation,install,upgrade,download,version,test" />
+		<link rel="author" href="humans.txt" />
 
 		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-precomposed.png" />
 
@@ -149,7 +150,7 @@
 		</main>
 
 		<footer>
-			<p class="col col-left">Problems? Email me at <a href="mailto:david@davidnewton.ca">david@davidnewton.ca</a>.</p>
+			<p class="col col-left">Problems? <a rel="external" href="https://github.com/nwtn/isflashinstalled.com/issues">Create an issue on GitHub</a>, or <a href="mailto:david@davidnewton.ca">email me at david@davidnewton.ca</a>.</p>
 			<div class="col col-right">
 				<p>&copy; 2009&ndash;<?php print date('Y'); ?></p>
 				<p>This site is not affiliated with Adobe Systems, Inc. <i>Adobe</i>, <i>Macromedia</i>, <i>Shockwave</i> and <i>Flash</i> are trademarks or registered trademarks of Adobe Systems, <abbr title="Incorporated">Inc.</abbr> in the United States and other countries.</p>

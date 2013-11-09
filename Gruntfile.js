@@ -25,10 +25,17 @@ module.exports = function(grunt) {
 
 		/* COPY FILES */
         copy: {
-			files: {
+			site: {
 				expand:	true,
 				cwd:	'src',
 				src:	['*.*', 'img/*.png', 'php/*'],
+				dest:	'build/',
+			},
+
+			extras: {
+				expand:	true,
+				cwd:	'.',
+				src:	['README.md', 'LICENSE'],
 				dest:	'build/',
 			}
 		},

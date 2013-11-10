@@ -51,8 +51,8 @@ abbr[title] {
 }
 
 aside {
-	width: 20em;
-	height: 3.125em;
+	overflow: hidden;
+
 	margin: 2em auto;
 
 	text-align: center;
@@ -186,8 +186,9 @@ header .big {
 	display: none;
 }
 
-.lt-ie8 aside {
-	display: none;
+.isflashinstalledcom-responsive {
+	width: 320px;
+	height: 50px;
 }
 
 .lt-ie8 dt,
@@ -260,7 +261,10 @@ header .results-answer {
 
 	aside {
 		width: 29.25em;
-		height: 3.75em;
+		padding: 1em;
+
+		background: #ddd;
+		background-color: rgba(255, 255, 255, 0.8);
 	}
 
 	h1 {
@@ -323,6 +327,11 @@ header .results-answer {
 	.details dd::after {
 		content: '\A';
 		white-space: pre;
+	}
+
+	.isflashinstalledcom-responsive {
+		width: 468px;
+		height: 60px;
 	}
 
 	header .results-answer {

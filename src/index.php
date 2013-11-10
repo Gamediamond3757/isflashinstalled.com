@@ -76,10 +76,16 @@
 				<p id="getFlash"><a rel="external" target="_blank" href="http://www.adobe.com/go/getflash/">Get <span class="macromedia">Macromedia/</span>Adobe Flash for free!</a></p>
 			</div>
 
-			<aside id="googleAd" class="isflashinstalledcom-responsive">
+			<aside id="googleAd">
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle isflashinstalledcom-responsive" style="display:inline-block" data-ad-client="ca-pub-7926086199679909" data-ad-slot="9275916973"></ins>
-				<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+				<!-- isflashinstalled.com - responsive -->
+				<ins class="adsbygoogle isflashinstalledcom-responsive"
+				     style="display:inline-block"
+				     data-ad-client="ca-pub-7926086199679909"
+				     data-ad-slot="9275916973"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</aside>
 
 			<section class="col col-left" id="faq">

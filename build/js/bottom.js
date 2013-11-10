@@ -519,30 +519,22 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 	}
 
 	function display() {
-		if (installed === 1) { $('body').addClass('flash'); }
-
-		$('.results-answer').html(answers[installed]);
-		$('.results-message').html(messages[installed]);
-
-		$('dd.jsfdl-installed').html(jsfdl.installed);
-		$('dd.jsfdl-raw').html(jsfdl.raw);
-		$('dd.jsfdl-major').html(jsfdl.major);
-		$('dd.jsfdl-minor').html(jsfdl.minor);
-		$('dd.jsfdl-revision').html(jsfdl.revision);
-		$('dd.jsfdl-revisionSt').html(jsfdl.revisionSt);
-
-		$('dd.afpdkc-type').html(afpdkc.type);
-		$('dd.afpdkc-version').html(afpdkc.version);
-
-		if (afpdkc.version != 'Unknown') {
-			$('.version').html(afpdkc.version);
-		} else if (jsfdl.major != 'Unknown') {
-			if (jsfdl.minor != 'Unknown') {
-				$('.version').html(jsfdl.major + '.' + jsfdl.minor);
-			} else {
-				$('.version').html(jsfdl.major);
-			}
+		if (installed === 1) {
+			document.getElementsByTagName('body')[0].className += 'flash';
 		}
+
+		document.getElementById('results-answer').innerHTML = answers[installed];
+		document.getElementById('results-message').innerHTML = messages[installed];
+
+		document.getElementById('jsfdl-installed').innerHTML = jsfdl.installed;
+		document.getElementById('jsfdl-raw').innerHTML = jsfdl.raw;
+		document.getElementById('jsfdl-major').innerHTML = jsfdl.major;
+		document.getElementById('jsfdl-minor').innerHTML = jsfdl.minor;
+		document.getElementById('jsfdl-revision').innerHTML = jsfdl.revision;
+		document.getElementById('jsfdl-revisionSt').innerHTML = jsfdl.revisionSt;
+
+		document.getElementById('afpdkc-type').innerHTML = afpdkc.type;
+		document.getElementById('afpdkc-version').innerHTML = afpdkc.version;
 	}
 
 	// JavaScript Flash Detection Library (Flash Detect) (Version 1.0.4):

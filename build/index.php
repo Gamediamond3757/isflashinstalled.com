@@ -54,7 +54,7 @@
 		<header id="results" role="banner">
 			<h1 class="big col col-left">Is Flash<br />Installed?</h1>
 			<div class="col col-right">
-				<p class="big results-answer">
+				<p class="big results-answer" id="results-answer">
 					<?php
 						if ($fpdkInstalled == 'Yes') {
 							print "Prob&shy;ab&shy;ly";
@@ -63,7 +63,7 @@
 						}
 					?>
 				</p>
-				<p class="results-message">Unfortunately, I can’t tell for sure if <span class="macromedia">Macromedia/</span>Adobe Flash is installed. <a href="#details">See details below</a>.</p>
+				<p class="results-message" id="results-message">Unfortunately, I can’t tell for sure if <span class="macromedia">Macromedia/</span>Adobe Flash is installed. <a href="#details">See details below</a>.</p>
 			</div>
 		</header>
 
@@ -113,22 +113,22 @@
 					<h3>JavaScript Flash Detection Library</h3>
 					<dl>
 						<dt class="jsfdl-installed">Installed</dt>
-						<dd class="jsfdl-installed">Unknown</dd>
+						<dd class="jsfdl-installed" id="jsfdl-installed">Unknown</dd>
 
 						<dt class="jsfdl-raw">Raw version</dt>
-						<dd class="jsfdl-raw">Unknown</dd>
+						<dd class="jsfdl-raw" id="jsfdl-raw">Unknown</dd>
 
 						<dt class="jsfdl-major">Major version</dt>
-						<dd class="jsfdl-major">Unknown</dd>
+						<dd class="jsfdl-major" id="jsfdl-major">Unknown</dd>
 
 						<dt class="jsfdl-minor">Minor version</dt>
-						<dd class="jsfdl-minor">Unknown</dd>
+						<dd class="jsfdl-minor" id="jsfdl-minor">Unknown</dd>
 
 						<dt class="jsfdl-revision">Revision</dt>
-						<dd class="jsfdl-revision">Unknown</dd>
+						<dd class="jsfdl-revision" id="jsfdl-revision">Unknown</dd>
 
 						<dt class="jsfdl-revisionSt">Revision string</dt>
-						<dd class="jsfdl-revisionSt">Unknown</dd>
+						<dd class="jsfdl-revisionSt" id="jsfdl-revisionSt">Unknown</dd>
 					</dl>
 				</section>
 
@@ -136,10 +136,10 @@
 					<h3>Adobe Flash Player Detection Kit (Client)</h3>
 					<dl>
 						<dt class="afpdkc-type">Type</dt>
-						<dd class="afpdkc-type">Unknown</dd>
+						<dd class="afpdkc-type" id="afpdkc-type">Unknown</dd>
 
 						<dt class="afpdkc-version">Version</dt>
-						<dd class="afpdkc-version">Unknown</dd>
+						<dd class="afpdkc-version" id="afpdkc-version">Unknown</dd>
 					</dl>
 				</section>
 
@@ -147,10 +147,10 @@
 					<h3>Adobe Flash Player Detection Kit (Server)</h3>
 					<dl>
 						<dt class="afpdks-installed">Installed</dt>
-						<dd class="afpdks-installed"><?php print $fpdkInstalled; ?></dd>
+						<dd class="afpdks-installed" id="afpdks-installed"><?php print $fpdkInstalled; ?></dd>
 
 						<dt class="afpdks-notes">Note</dt>
-						<dd class="afpdks-notes">
+						<dd class="afpdks-notes" id="afpdks-notes">
 							<blockquote>
 								<p>The following issues with server side detection should be closely noted. Internet Explorer on Mac <abbr class="initialism" title="operating system">OS</abbr> is hard-coded to accept '*/*' and cannot be modified dynamically. Secondly, users can manually uninstall Flash Player by deleting the executable itself. This casuses <i>(sic)</i> the custom accept header to be &quot;orphaned&quot; such that server detection logic thinks Flash has been installed, when in fact it is no longer available. It is also possible to disable ActiveX controls through the Windows <abbr class="initialism">XP</abbr> Service Pack 2 security settings, which will similarly cause the custom accept header to be orphaned.</p>
 								<cite>Adobe Flash&reg; Player Detection Kit Revision 1.5 by Michael Williams (FlashPlayerDetectionKit_StartHere.pdf)</cite>
@@ -168,9 +168,6 @@
 				<p>This site is not affiliated with Adobe Systems, Inc. <i>Adobe</i>, <i>Macromedia</i>, <i>Shockwave</i> and <i>Flash</i> are trademarks or registered trademarks of Adobe Systems, <abbr title="Incorporated">Inc.</abbr> in the United States and other countries.</p>
 			</div>
 		</footer>
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
 
 
 		<?php // PRODUCTION RESOURCES

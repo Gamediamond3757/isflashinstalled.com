@@ -150,7 +150,6 @@ html {
      * Don't show links for images, or javascript/internal links
      */
 
-  a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
@@ -297,7 +296,7 @@ footer p {
 /** Classes **/
 
 header .big {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 0.9;
 }
 
@@ -328,8 +327,31 @@ header .big {
   padding: 0;
 }
 
+.extra {
+  clear: both;
+  margin: 2em 0;
+  padding: 0.5em;
+  background: #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
 .flash .extra {
   display: none;
+}
+
+.lt-ie8 aside {
+  display: none;
+}
+
+.lt-ie8 dt,
+.lt-ie8 dd {
+  display: block;
+  float: none;
+}
+
+.lt-ie8 dt {
+  margin-top: 0.75em;
 }
 
 .initialism {
@@ -350,7 +372,7 @@ header .big {
 header .results-answer {
   margin-top: 0.25em;
   margin-bottom: 0;
-  font-size: 6.5em;
+  font-size: 5em;
   text-transform: uppercase;
 }
 
@@ -396,6 +418,10 @@ header .results-answer {
 
   /** Classes **/
 
+  h1.big {
+    font-size: 4em;
+  }
+
   .col {
     float: left;
     width: 46%;
@@ -427,17 +453,9 @@ header .results-answer {
     white-space: pre;
   }
 
-  .extra {
-    clear: both;
-    margin: 2em 0;
-    padding: 0.5em;
-    background: #ddd;
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-  }
-
   header .results-answer {
     margin-top: 0;
+    font-size: 6.5em;
     text-align: left;
   }
 

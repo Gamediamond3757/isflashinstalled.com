@@ -509,9 +509,9 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
 		jsfdl = jsfdlDetect(jsfdl);
 		afpdkc = afpdkcDetect(afpdkc);
 
-		if (jsfdl.installed && afpdkc.type != 'Unknown' && afpdkc.version != 'Unknown') {
+		if (jsfdl.installed == "Yes" && afpdkc.type != 'Unknown' && afpdkc.version != 'Unknown') {
 			installed	= 1;
-		} else if (jsfdl.installed || afpdkc.type != 'Unknown' || afpdkc.version != 'Unknown') {
+		} else if (jsfdl.installed == "Yes" || afpdkc.type != 'Unknown' || afpdkc.version != 'Unknown') {
 			installed	= -1;
 		} else {
 			installed	= 0;

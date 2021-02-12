@@ -1,7 +1,7 @@
 isflashinstalled.com
 ====================
 
-[IsFlashInstalled.com](http://isflashinstalled.com) will tell you if Adobe Flash is installed and, if so, what version.
+[IsFlashInstalled](https://gamediamond3757.github.io/isflashinstalled.com/build/website.html) will tell you if Adobe Flash is installed and, if so, what version.
 
 ## How does it work?
 
